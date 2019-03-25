@@ -1,0 +1,429 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Custom stylesheet for http://barrej.com created by Ryan Curry */
+
+/* Core CSS Elements */
+
+html, body
+{
+	min-height: 100%;
+	background-color: ghostwhite;
+}
+
+h1
+{
+	font-family: 'Alfa Slab One', cursive;
+	color: ghostwhite;
+	font-size: 75px;
+	padding: 10px;
+}
+
+
+p
+{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 50px;
+}
+
+a
+{
+	text-decoration: none !important;
+}
+
+iframe
+{
+	width: 100%;
+	height: 100%;
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+/* Preloader */
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #0c0c0c;
+	z-index: 99999999;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+.no-js #preloader, .oldie #preloader {
+	display: none;
+}
+#loader {
+	display: table-cell;
+	vertical-align: middle;
+	text-align-last: center;
+}
+
+/* Breathing Courtesy of https://codepen.io/dominiceden/ */
+#img-loader
+{
+	-webkit-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+/* Landing Page (index.html) Styling */
+#main.main
+{
+	padding: 0px;
+}
+.page-landing
+{
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-blend-mode: normal;
+  	display: table;
+  	width: 100%;
+}
+
+.page-landing-content
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.page-landing-mark
+{
+	background-color: ghostwhite;
+	padding: 15px 25px;
+	color: #342d8d;
+	font-size: 69px;
+}
+
+.page-landing-button
+{
+	-webkit-transition-duration: 0.15s; /* Safari */
+	transition-duration: 0.15s;
+	font-family: 'Alfa Slab One', cursive;
+	color: ghostwhite;
+	font-size: 60px;
+	background-color: black;
+	display: block;
+	margin: 0 auto;
+}
+
+.page-landing-button:hover {
+	background-color: ghostwhite; /* Green */
+	color: black;
+}
+
+.page-landing-button-nohover
+{
+	-webkit-transition-duration: 0.15s; /* Safari */
+	transition-duration: 0.15s;
+	font-family: 'Alfa Slab One', cursive;
+	color: ghostwhite;
+	font-size: 60px;
+	background-color: black;
+	display: block;
+	margin: 0 auto;
+}
+
+.page-landing-button-nohover:hover {
+	color: ghostwhite;
+	cursor: default !important;
+}
+
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #212529;
+	opacity: 0.3;
+}
+
+img.logo-big
+{
+	display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+/* About Page Styling */
+
+h1.about-stats
+{
+	color: black;
+	font-size: 40px;
+	padding: 0px;
+	text-align: center;
+}
+
+h1.about-heading
+{
+	color: black;
+	font-size: 75px;
+	text-align: center;
+}
+
+img.about-icon-img
+{
+	display: block;
+	margin: 0 auto;
+}
+
+p.about-trainers-name
+{
+	color: ghostwhite;
+	font-size: 45px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.about-stats-container
+{
+	display: table;
+	width: 100%;
+}
+
+.about-trainers-container
+{
+	background-color: #0c0c0c;
+}
+
+.about-stats-container-child
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+.about-background-img
+{
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-blend-mode: normal;
+}
+.about-stats-container
+{
+	height: 100%;
+	width: 100%;
+	display: table;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+}
+
+.about-center
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+
+/* Map and Location Page Styling */
+
+#map-parent
+{
+	display: table;
+	width: 100%;
+}
+
+#map
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+/* Community Page Styling */
+
+p.community-light
+{
+	color: ghostwhite;
+	font-size: 35px;
+	font-family: 'Poppins', sans-serif;
+}
+
+p.community-dark
+{
+	color: #0C0C0C;
+	font-size: 35px;
+	text-align-last: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1.community-heading-light
+{
+	padding-top: 20px;
+	color: ghostwhite;
+	font-size: 75px;
+	text-align: center;
+}
+
+h1.community-heading-dark
+{
+	padding-top: 20px;
+	color: black;
+	font-size: 75px;
+	text-align: center;
+}
+
+.community-container-light
+{
+	display: table;
+	width: 100%;
+	background-color: ghostwhite;
+}
+
+.community-container-dark
+{
+	display: table;
+	width: 100%;
+	background-color: #0C0C0C;
+}
+
+.community-container-child
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/* Contact Page Styling */
+.contact-container
+{
+	display: table;
+	width: 100%;
+}
+
+.contact-container-child
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+/* The navigation menu */
+.sidenav
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 0; 
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover
+{
+  color: ghostwhite;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-button-dark button
+{
+	background-color: black;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+/* Footer Styling */
+footer
+{
+	background-color: #0C0C0C;
+	display: table;
+	width: 100%;
+}
+
+.footer-child
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+p.copyright
+{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 12px;
+	text-align-last: center;
+}
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
